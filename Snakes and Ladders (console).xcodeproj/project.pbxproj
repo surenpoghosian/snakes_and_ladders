@@ -7,16 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3361CA992A3EE952008D5589 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3361CA982A3EE952008D5589 /* main.swift */; };
+		33D2452A2A44B47C00FEB717 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D245292A44B47B00FEB717 /* main.swift */; };
+		33D245432A44BDB500FEB717 /* diceRoll.wav in CopyFiles */ = {isa = PBXBuildFile; fileRef = 33D245422A44BD8700FEB717 /* diceRoll.wav */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		3361CA932A3EE952008D5589 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
-			dstSubfolderSpec = 0;
+			dstPath = usr/share/man/man1;
+			dstSubfolderSpec = 16;
 			files = (
+				33D245432A44BDB500FEB717 /* diceRoll.wav in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
@@ -24,7 +26,10 @@
 
 /* Begin PBXFileReference section */
 		3361CA952A3EE952008D5589 /* Snakes and Ladders (console) */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Snakes and Ladders (console)"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3361CA982A3EE952008D5589 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		33D245292A44B47B00FEB717 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = main.swift; path = "../../../Desktop/Snakes and Ladders (console)/main.swift"; sourceTree = "<group>"; };
+		33D2453E2A44BD0F00FEB717 /* interfaceAction.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = interfaceAction.mp3; path = "Snakes and Ladders (console)/interfaceAction.mp3"; sourceTree = SOURCE_ROOT; };
+		33D245402A44BD0F00FEB717 /* laddersUp.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = laddersUp.mp3; path = "Snakes and Ladders (console)/laddersUp.mp3"; sourceTree = SOURCE_ROOT; };
+		33D245422A44BD8700FEB717 /* diceRoll.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = diceRoll.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +62,20 @@
 		3361CA972A3EE952008D5589 /* Snakes and Ladders (console) */ = {
 			isa = PBXGroup;
 			children = (
-				3361CA982A3EE952008D5589 /* main.swift */,
+				33D2453D2A44BCED00FEB717 /* Sounds */,
+				33D245292A44B47B00FEB717 /* main.swift */,
 			);
 			path = "Snakes and Ladders (console)";
+			sourceTree = "<group>";
+		};
+		33D2453D2A44BCED00FEB717 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				33D245422A44BD8700FEB717 /* diceRoll.wav */,
+				33D2453E2A44BD0F00FEB717 /* interfaceAction.mp3 */,
+				33D245402A44BD0F00FEB717 /* laddersUp.mp3 */,
+			);
+			path = Sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -120,7 +136,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3361CA992A3EE952008D5589 /* main.swift in Sources */,
+				33D2452A2A44B47C00FEB717 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
